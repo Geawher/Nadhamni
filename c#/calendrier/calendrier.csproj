@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26C97A39-DB3E-4B90-A751-978EB9F16AB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>calendrier1</RootNamespace>
+    <AssemblyName>calendrier</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>calendrier.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Framework\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Base, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Pdf, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.WebEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.1\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="activité.cs" />
+    <Compile Include="AddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEvent.Designer.cs">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="details jour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="details jour.Designer.cs">
+      <DependentUpon>details jour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="done.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="done.Designer.cs">
+      <DependentUpon>done.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donecs.Designer.cs">
+      <DependentUpon>donecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enf.cs" />
+    <Compile Include="enfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enfant.Designer.cs">
+      <DependentUpon>enfant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Alert.Designer.cs">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inscrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inscrit.Designer.cs">
+      <DependentUpon>Inscrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerwithfb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerwithfb.Designer.cs">
+      <DependentUpon>registerwithfb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="persinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="persinfo.Designer.cs">
+      <DependentUpon>persinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personne.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registerwithgoogle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerwithgoogle.Designer.cs">
+      <DependentUpon>registerwithgoogle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stat.Designer.cs">
+      <DependentUpon>stat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateact.Designer.cs">
+      <DependentUpon>updateact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Voice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Voice.Designer.cs">
+      <DependentUpon>Voice.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEvent.resx">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="details jour.resx">
+      <DependentUpon>details jour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="done.resx">
+      <DependentUpon>done.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enfant.resx">
+      <DependentUpon>enfant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Alert.resx">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscrit.resx">
+      <DependentUpon>Inscrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerwithfb.resx">
+      <DependentUpon>registerwithfb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="persinfo.resx">
+      <DependentUpon>persinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="registerwithgoogle.resx">
+      <DependentUpon>registerwithgoogle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stat.resx">
+      <DependentUpon>stat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateact.resx">
+      <DependentUpon>updateact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Voice.resx">
+      <DependentUpon>Voice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calend.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calend.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_icon-icons.com_66541.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-icon_34471.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-ew-feature-new-calendar-agenda-view-calendar-pink-icon-400x400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-ew-feature-new-calendar-agenda-view-calendar-pink-icon-400x4001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toppng.com-ew-feature-new-calendar-agenda-view-calendar-pink-icon-400x4002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\134-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twitter-Logo-2015-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox2.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48388955_2369848996419023_8302116120391843840_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78418993_583552785743831_5242659092652097536_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_page_28_agustus_2x copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\471.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300jpg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1250.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\254.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12547.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\micro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

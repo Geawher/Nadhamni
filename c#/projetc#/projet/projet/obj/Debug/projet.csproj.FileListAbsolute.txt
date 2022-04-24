@@ -1,0 +1,10 @@
+C:\Users\Melek\Desktop\projetc#\projet\projet\bin\Debug\projet.exe.config
+C:\Users\Melek\Desktop\projetc#\projet\projet\bin\Debug\projet.exe
+C:\Users\Melek\Desktop\projetc#\projet\projet\bin\Debug\projet.pdb
+C:\Users\Melek\Desktop\projetc#\projet\projet\obj\Debug\projet.csprojAssemblyReference.cache
+C:\Users\Melek\Desktop\projetc#\projet\projet\obj\Debug\projet.Form1.resources
+C:\Users\Melek\Desktop\projetc#\projet\projet\obj\Debug\projet.Properties.Resources.resources
+C:\Users\Melek\Desktop\projetc#\projet\projet\obj\Debug\projet.csproj.GenerateResource.cache
+C:\Users\Melek\Desktop\projetc#\projet\projet\obj\Debug\projet.exe
+C:\Users\Melek\Desktop\projetc#\projet\projet\obj\Debug\projet.pdb
+C:\Users\Melek\Desktop\projetc#\projet\projet\obj\Debug\projet.accueil.resources

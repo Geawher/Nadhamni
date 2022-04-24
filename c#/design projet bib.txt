@@ -1,0 +1,11 @@
+dashboard design  
+homework.isg@gmail.com
+Etapes de l'exposé : 
+introduction 
+installation 
+possibilités et limites 
+commendes 
+exemples 
+729*674 pixels
+backgroung : 34, 36, 52
+bt : System.Drawing.Bitmap

@@ -23,3 +23,5 @@ The application should therefore be devided into multiple components ;
 <img src="https://user-images.githubusercontent.com/59174758/203816515-1a39431a-79c4-473c-b8a1-d562145464fc.png" width="600" height="375" />
 
 <img src="https://user-images.githubusercontent.com/59174758/203816019-32011ba0-d9d7-476f-a281-a77f00acdbc0.png" width="600" height="375" />
+
+<img src="https://user-images.githubusercontent.com/59174758/203817186-6274be07-f53c-46ba-b3a6-2c7db8660ec2.png" width="600" height="375" />
